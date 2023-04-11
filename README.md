@@ -1,6 +1,5 @@
-# Final-Year-Project
+# Topic Modelling in Tamil
 
-1. Create /data folder
-2. Add https://www.kaggle.com/datasets/vijayabhaskar96/tamil-news-classification-dataset-tamilmurasu to /data folder
-3. Run preprocessing_pipeline.ipynb file to get processed_data.csv# FYP
-# FYP
+This is a project that leverages c-TF-IDF and BERTopic to perform topic modeling on a corpus of Tamil documents. The project uses custom preprocessing techniques for Tamil text, as well as a custom POS tagger based on the Stanza library.
+
+While BERTopic does not natively support Tamil language, the project uses pre-trained Tamil models from LabSE to create a custom embedding model, which is used to cluster the documents into topics.
