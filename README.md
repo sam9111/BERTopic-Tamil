@@ -1,7 +1,27 @@
-# Topic Modelling in Tamil
+# TOPIC MODELING APPROACH TO CONTENT-BASED RECOMMENDER SYSTEM FOR TAMIL NEWS ARTICLES
 
-This project is a topic modeling pipeline that uses c-TF-IDF to extract candidate topics from a corpus of documents, and then applies a custom part-of-speech tagging to identify noun phrases and generate a final list of topics. The pipeline is implemented in Python and uses the Stanza library for Tamil language processing.
+### Source for Dataset
 
-While the pipeline can be applied to any language, it is especially useful for languages such as Tamil, which are underrepresented in the topic modeling literature. BERTopic, a popular Python library for topic modeling, has not yet been trained on Tamil, making it difficult to apply to Tamil-language corpora. This pipeline addresses this gap by providing a customizable, language-agnostic topic modeling pipeline that can be adapted to any language.
+https://www.kaggle.com/datasets/vijayabhaskar96/tamil-news-classification-dataset-tamilmurasu
 
-In summary, this project provides a powerful tool for topic modeling in languages such as Tamil, where existing topic modeling libraries may not be suitable. With its customizable architecture and support for Stanza's Tamil language processing, this pipeline is well-suited for a variety of applications in natural language processing and computational linguistics.
+### Software and Hardware requirements
+
+1. Minimum Python 3.9 version
+
+2. Anaconda Environment
+
+### Detailed instructions to execute the source code
+
+1. Install all the required Python packages in a conda environment.
+
+   ```sh
+
+    pip install -r requirements.txt
+   ```
+
+2. Create a /data folder and place the downloaded dataset inside it.
+3. Run the preprocessing/tamilmurasu_preprocessing.ipynb notebook to preprocess the dataset.
+4. To test the Adapted BERTopic model finetuned for this dataset, run BERTopic/BERTopic_final.ipynb.
+5. To test the comparison between different Tamil word embeddings for BERTopic and LDA, run the files under comparison folder.
+6. To test the LDA model, first run preprocessing/preprocessing_pipeline.ipynb notebook and then run comparsion/LDA.ipynb.
+7. To test the recommender system, run recommendation_system/recommender_system_experiments.ipynb
